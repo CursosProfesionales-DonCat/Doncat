@@ -1,0 +1,452 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+.header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    position: relative;
+    font-size: 30px;
+   
+}
+
+.header h1 {
+    margin-bottom: 0;
+}
+
+/* Botón de regresar */
+.back-btn {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor principal */
+.container {
+    flex: 1;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(226, 224, 224, 0.1);
+    border-radius: 8px;
+}
+
+/*boton*/
+.button-container-1 {
+    position: relative;
+    width: 100px;
+    height: 50px;  
+    margin-left: 0; /* Cambiado de auto a 0 para alinear a la izquierda */
+    margin-right: auto;
+    margin-top: 0%;
+    overflow: hidden;
+    border: 1px solid;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    transition: 0.5s;
+    letter-spacing: 1px;
+  }
+  
+  .button-container-1 button {
+    width: 101%;
+    height: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background: #ffffff;
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
+  }
+  
+  .button-container-1 button:hover {
+    -webkit-animation: ani 0.7s steps(22) forwards;
+    animation: ani 0.7s steps(22) forwards;
+  }
+  
+  .mas {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+    width: 101%;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 7px;
+    overflow: hidden;
+  }
+  
+  @-webkit-keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+  }
+  
+  @keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+  }
+  
+  @-webkit-keyframes ani2 {
+    from {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+    to {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+  }
+  
+  @keyframes ani2 {
+    from {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+    to {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+  }
+  
+  a {
+    color: #3147ab;
+    text-decoration: none;
+  }
+
+.recomendaciones li{
+    list-style: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    user-select: none;
+}
+
+
+
+  
+/* Sección de detalles del curso */
+.course-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-container img {
+    width: 300px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.pagsya {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
+/* Información del curso */
+.info-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.scrollable-content {
+    max-height: 350px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.specifications {
+    margin-top: 15px;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+}
+
+.specifications h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.specifications textarea {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+
+.specifications textarea:focus {
+    outline: none;
+    border-color: #7a18c9;
+    box-shadow: 0 0 5px rgba(122, 24, 201, 0.5);
+}
+
+/* Precio y botón */
+.price h3 {
+    font-size: 22px;
+    color: #e63946;
+    margin: 15px 0;
+}
+
+.pay-btn,
+.text-btn,
+.whatsapp-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.pay-btn {
+    background-color: #7a18c9;
+    color: white;
+}
+
+.pay-btn:hover {
+    background-color: #871bec;
+}
+
+.text-btn {
+    background-color: #ceb44c;
+    color: white;
+}
+
+.text-btn:hover {
+    background-color: #ab8b1a;
+}
+
+.whatsapp-btn {
+    background-color: #12946b;
+    color: white;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1dad95e9;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;    
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 90%;
+    max-width: 410px;
+    position: relative;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    user-select: none;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+}
+
+.modal-content .close:hover {
+    color: #e63946;
+}
+
+.pags {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    user-select: none;
+}
+.modal-content .qr-container {
+    display: flex !important;
+}
+/* Contenedor para los QR (Yape y Plin) */
+.modal-content .qr-container {
+    display: flex; /* Coloca las imágenes en una fila */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 15px; /* Espaciado entre las imágenes */
+    margin-top: 20px;
+    
+}
+
+.modal-content .qr-container img {
+    width: 45%; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 480px) {
+    .modal-content .qr-container {
+        flex-direction: column; /* Apila las imágenes en dispositivos pequeños */
+        align-items: center; /* Centra las imágenes apiladas */
+    }
+
+    .modal-content .qr-container img {
+        width: 80%; /* Ajusta el tamaño de las imágenes apiladas */
+        margin-bottom: 10px; /* Espaciado entre imágenes */
+    }
+}
+
+/* Pie de página */
+.footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .course-details {
+        flex-direction: column;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .scrollable-content {
+        max-height: 400px;
+    }
+
+    .price h3 {
+        font-size: 18px;
+    }
+
+    .pay-btn,
+    .text-btn,
+    .whatsapp-btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .back-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .price h3 {
+        font-size: 16px;
+    }
+
+    .specifications textarea {
+        width: 100%;
+    }
+
+    .pay-btn,
+    .text-btn,
+    .whatsapp-btn {
+        font-size: 12px;
+    }
+
+    .back-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+        left: 5px;
+    }
+}
