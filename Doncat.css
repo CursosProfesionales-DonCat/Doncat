@@ -67,13 +67,11 @@ html {
     transform: translateY(-5px);
 }
 
-.hamburger {
-    display: none;
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
+.dolar{
+    color: rgb(10, 114, 0);
+    text-decoration:line-through
 }
+
 
 @media (max-width: 768px) {
     .cours-container .cour-card {
