@@ -140,7 +140,16 @@ body {
     object-fit: cover;
     border-radius: 8px;
 }
-
+.dolar{
+    color: rgb(10, 114, 0);
+}
+.raya{
+    text-decoration: line-through
+}
+.raya-do{
+    color:rgb(10, 114, 0);
+    text-decoration: line-through
+}
 .pagsya {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -203,7 +212,7 @@ body {
 
 .pay-btn,
 .text-btn,
-.whatsapp-btn {
+.whatsapp-btn{
     display: inline-block;
     padding: 12px 20px;
     font-size: 16px;
@@ -214,7 +223,17 @@ body {
     text-transform: uppercase;
     margin-top: 10px;
 }
-
+.mercado-btn{
+    display: inline-block;
+    padding: 12px 347px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
 .pay-btn {
     background-color: #7a18c9;
     color: white;
@@ -233,6 +252,13 @@ body {
     background-color: #ab8b1a;
 }
 
+.mercado-btn{
+    background-color: #1d86c4;
+    color: white;
+}
+.mercado-btn:hover {
+    background-color: #52a3ebe9;
+}
 .whatsapp-btn {
     background-color: #12946b;
     color: white;
@@ -292,7 +318,6 @@ body {
     padding: 0;
     margin: 0;
     text-align: left;
-    user-select: none;
 }
 .modal-content .qr-container {
     display: flex !important;
@@ -363,7 +388,7 @@ body {
 
     .pay-btn,
     .text-btn,
-    .whatsapp-btn {
+    .whatsapp-btn, .mercado-btn{
         width: 100%;
         font-size: 14px;
         padding: 10px;
@@ -394,7 +419,7 @@ body {
 
     .pay-btn,
     .text-btn,
-    .whatsapp-btn {
+    .whatsapp-btn .mercado-btn{
         font-size: 12px;
     }
 
@@ -404,3 +429,4 @@ body {
         left: 5px;
     }
 }
+
