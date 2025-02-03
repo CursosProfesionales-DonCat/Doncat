@@ -79,6 +79,11 @@ html {
         text-align: center;
         align-items: center;
     }
+    .cours-container1 .cour-card {
+        width: calc(50% - 20px); /* Dos columnas por fila en pantallas pequeñas */
+        text-align: center;
+        align-items: center;
+    }
     .menu {
         display: none;
         flex-direction: column;
@@ -97,17 +102,25 @@ html {
     .container {
         flex-direction: column;
     }
-
+    .container1 {
+        flex-direction: column;
+    }
     .courses {
         display: grid;
         grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas medianas */
         gap: 15px;
     }
-
+    .courses1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas medianas */
+        gap: 15px;
+    }
     .course {
         max-width: 100%; /* Los cursos ocupan el 100% del ancho */
     }
-
+    .course1 {
+        max-width: 100%; /* Los cursos ocupan el 100% del ancho */
+    }
     .carousel {
         max-width: 100%;
     }
@@ -129,7 +142,15 @@ html {
         max-width: 1200px;
         margin: 0 auto; /* Centra el contenedor en la página */
     }
-
+    .cours-container1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centra los cuadros horizontalmente */
+        gap: 20px; /* Espaciado entre los cuadros */
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto; /* Centra el contenedor en la página */
+    }
     .cour-card {
         display: flex;
         align-items: center;
@@ -303,13 +324,60 @@ button:hover {
     width: 100%;
 }
 
+        .centro1 {
+            text-align: center;
+            cursor: pointer;
+            font-size: 23px;
+            padding: 15px;
+            background-color: #5ad1f9;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .centro1:hover {
+            background-color: #ffffff;
+            color: black;
+        }
+        .container1 {
+            display: none; /* Oculto por defecto */
+            transition: max-height 0.3s ease-in-out;
+        }
+        .courses1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;;
+        }
+        .course1 {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .course1 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .show {
+            display: block !important;
+        }
+
+
+
 .courses {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
     padding: 20px;
 }
-
+.courses1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
 .course {
     background-color: #fff;
     border-radius: 10px;
@@ -347,6 +415,47 @@ button:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+
+.course1 {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.course1 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.course1 h3 {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.course1 .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #380707;
+}
+
+.course1 .badge {
+    background-color: #f44336;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.course1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
 .section-title {
     text-align: left;
     padding: 20px;
@@ -369,7 +478,15 @@ button:hover {
     max-width: 1200px;
     margin: 0 auto; /* Centra el contenedor en la página */
 }
-
+.cours-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los cuadros horizontalmente */
+    gap: 20px; /* Espaciado entre los cuadros */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenedor en la página */
+}
 .cour-card {
     display: flex;
     align-items: center;
