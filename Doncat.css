@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'arial';
     background-color: #eeeeeb;
 }
 
@@ -13,7 +13,7 @@ html {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #fff;
+    background-color: #dedbdb;
     border-bottom: 1px solid #ddd;
 }
 
@@ -44,7 +44,6 @@ html {
 
 .menu .btn {
     padding: 5px 10px;
-    border: 1px solid #333;
     border-radius: 5px;
     text-align: center;
     display: inline-flex; /* Asegura que los elementos se alineen correctamente */
@@ -170,9 +169,6 @@ a {
     color: inherit;
 }
 
-.medio{
-    font-family: 'Times New Roman', Times, serif;
-}
 
 .cta {
     position: relative;
@@ -317,10 +313,10 @@ button:hover {
 }
 
 .centro {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'arial';
     text-align: center;
-
-    background-color: #fff;
+    color: white;
+    background-color: #545252;
     width: 100%;
 }
 
@@ -329,7 +325,7 @@ button:hover {
             cursor: pointer;
             font-size: 23px;
             padding: 15px;
-            background-color: #5ad1f9;
+            background-color: #0e9dcc;
             color: white;
             font-weight: bold;
             border-radius: 5px;
@@ -337,8 +333,8 @@ button:hover {
             user-select: none;
         }
         .centro1:hover {
-            background-color: #ffffff;
-            color: black;
+            background-color: #000000;
+            color: rgb(255, 255, 255);
         }
         .container1 {
             display: none; /* Oculto por defecto */
@@ -458,15 +454,15 @@ button:hover {
 
 
 .section-title {
-    text-align: left;
+    text-align: center;
     padding: 20px;
-    background-color: white;
+    background-color: #545252;
     margin-bottom: 10px;
 }
 
 .section-title h2 {
     font-size: 24px;
-    color: #333;
+    color: white;
     margin: 0;
 }
 
@@ -572,4 +568,13 @@ footer p {
 footer strong{
     font-weight: bold;
     color: white;
+}
+
+
+.subir{
+    text-align: center;
+}
+.subir:hover{
+    text-align: center;
+    color: #ef0000;
 }
