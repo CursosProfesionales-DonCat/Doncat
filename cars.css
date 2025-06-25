@@ -1,0 +1,195 @@
+/* --- Cursos en carrito --- */
+.cars-curso {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+/* --- Botones de acción en carrito --- */
+.cars-btn,
+.btn-cars {
+    margin-top: 10px;
+    background-color: #222;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    width: 95%;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cars-btn.seleccionado,
+.btn-cars.seleccionado {
+    background-color: green;
+}
+
+/* --- Botón flotante carrito --- */
+#boton-cars {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #222;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Contador de carrito --- */
+#contador-cars {
+    background: red;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+/* --- Modal carrito --- */
+.cars-modal {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 99;
+}
+
+/* --- Imagen curso en carrito --- */
+.cars-modal img {
+    margin: 10px 5px;
+    border-radius: 8px;
+}
+
+/* --- Lista carrito --- */
+#lista-cars li {
+    margin-bottom: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* --- Scroll en carrito --- */
+#lista-cars {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+/* --- Estilos por botón vertical --- */
+.metodos-pago-cars-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* --- Botones individuales --- */
+.metodo-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-yape { background-color: #3b0987; }
+.btn-yape:hover { background-color: #4c00b3; }
+
+.btn-inter { background-color: #cb992d; }
+.btn-inter:hover { background-color: #cc6e00; }
+
+.btn-mercado { background-color: #009ee3; }
+.btn-mercado:hover { background-color: #007ab3; }
+
+.btn-wsp { background-color: #21a150; }
+.btn-wsp:hover { background-color: #1ba24e; }
+
+.btn-volver {
+    background-color: #777;
+    color: white;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.btn-volver:hover {
+    background-color: #555;
+}
+
+/* --- Responsivo para móviles --- */
+@media screen and (max-width: 768px) {
+    #boton-cars {
+        padding: 10px 14px;
+        font-size: 16px;
+    }
+}
+/* Modal genérico */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Contenido centrado del modal */
+.modal-content {
+  background-color: #fff;
+  margin: 8% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+/* Botón para cerrar modales */
+.modal-content .close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+}
+
+.modal-content .close:hover {
+  color: #000;
+}
+.qr-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.qr-container img {
+  max-width: 120px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
