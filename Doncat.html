@@ -529,5 +529,86 @@
         <p class="redsocial">Facebook: <a href="https://www.facebook.com/profile.php?id=100093623012790" target="_blank"> Unique Cursos</a></p>
         <p>© 2024 Todos los derechos reservados | Don cat</p>
       </footer>
+      
+<!-- Botón flotante de Cars -->
+<div id="boton-cars" onclick="toggleCars()">
+  🛒<span id="contador-cars">0</span>
+</div>
+
+<!-- Modal de Cars -->
+<div id="modal-cars" class="cars-modal">
+  <h2>Carrito de Compras</h2>
+  <ul id="lista-cars"></ul>
+  <p><strong>Total: S/ <span id="total-cars">0.00</span></strong></p>
+  <button class="cars-btn" onclick="mostrarPagos()">Medios de Pago</button>
+  <button class="cars-btn" onclick="toggleCars()">Cerrar</button>
+</div>
+
+<!-- ✅ Modal general de Medios de Pago -->
+<div id="modal-pagos" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="cerrarPagos()">&times;</span>
+    <h3>Métodos de pago</h3>
+    <div class="metodos-pago-cars-vertical">
+      <button class="metodo-btn btn-yape" id="openModalPagoQR">YAPE / PLIN</button>
+      <button class="metodo-btn btn-inter" id="openModalPagoText">INTERBANCARIO / PAYPAL</button>
+      <a href="https://link.mercadopago.com.pe/doncat" target="_blank">
+        <button class="metodo-btn btn-mercado">MERCADO PAGO</button>
+      </a>
+      <a href="https://wa.me/message/QN4U4OXYVOSLB1" target="_blank">
+        <button class="metodo-btn btn-wsp">CONTACTO WHATSAPP</button>
+      </a>
+      <button class="metodo-btn btn-volver" onclick="cerrarPagos()">VOLVER</button>
+    </div>
+  </div>
+</div>
+
+<!-- ✅ Modal QR Pago (YAPE/PLIN) -->
+<div class="modal" id="modalPagoQR">
+  <div class="modal-content">
+    <span class="close" id="closeModalPagoQR">&times;</span>
+    <h2>Escanea este QR para pagar</h2>
+    <div class="qr-container">
+      <img src="IMG/Pagos/yape.jpeg" alt="QR Yape">
+      <img src="IMG/Pagos/plin.jpeg" alt="QR Plin">
+    </div>
+    <p class="pagsya">
+      🌟Mandar comprobante de pago, foto del megapack y correo Gmail al 
+      <a target="_blank" href="https://wa.me/message/QN4U4OXYVOSLB1">WhatsApp</a> 🌟
+    </p>
+  </div>
+</div>
+
+<!-- ✅ Modal Interbancario/PayPal -->
+<div class="modal" id="modalPagoText">
+  <div class="modal-content">
+    <span class="close" id="closeModalPagoText">&times;</span>
+    <h2>🌟 Métodos Bancarios / PayPal 🌟</h2>
+    <ul class="pags">
+      <li>✅ BBVA - JUNIOR MOTTA</li>
+      <li>🟣 Cuenta: 0011-0814-0267348354-17</li>
+      <li>🟣 CCI: 011-814-000267348354-17</li>
+      <br>
+      <li>✅ INTERBANK - JUNIOR MOTTA</li>
+      <li>🟣 Cuenta: 3303333136179</li>
+      <li>🟣 CCI: 00333001333313617989</li>
+      <br>
+      <li>✅ BCP - JUNIOR MOTTA</li>
+      <li>🟣 Cuenta: 19470905077087</li>
+      <li>🟣 CCI: 00219417090507708799</li>
+      <br>
+      <li>✅ PAYPAL</li>
+      <li>🟣 <a href="https://www.paypal.me/JuniorPMS" target="_blank">https://www.paypal.me/JuniorPMS</a></li>
+    </ul>
+    <p class="pagsya">
+      🌟Mandar comprobante de pago, foto del megapack y correo Gmail al
+      <a target="_blank" href="https://wa.me/message/QN4U4OXYVOSLB1">WhatsApp</a> 🌟
+    </p>
+  </div>
+</div>
+
+<!-- Carga los estilos y el script al final -->
+<link rel="stylesheet" href="cars.css">
+<script src="cars.js"></script>
 </body>
 </html>
