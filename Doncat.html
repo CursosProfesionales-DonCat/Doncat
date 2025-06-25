@@ -80,19 +80,24 @@
                 <h3> + PACKS DE LIBROS</h3>
                 <p class="price">S/10 - $4.50</p>
                 <a href="hacking.html"><span class="badge">Lo más vendido</span></a>
+                <button class="cars-btn" onclick="toggleCurso('MEGAPACK HACKING', 10, 'IMG/carrito/Hacking.jpg')">Añadir al carrito</button>
+
             </div>
-              <div class="course">
+             <div class="course">
                 <a href="IOT.html"><img src="IMG/carrito/iot20.webp" alt="Curso 2"></a>
                 <h3>MEGAPACK DE IOT, RASPBERRY</h3>
                 <h3>& MICROCONTROLADORES</h3>
                 <p class="price">S/19,90 - $8</p>
                 <a href="IOT.html"><span class="badge">Lo más vendido</span></a>
+                <button class="cars-btn" onclick="toggleCurso('MEGAPACK IOT', 19.90, 'IMG/carrito/iot20.webp')">Añadir al carrito</button>
+
             </div>
             <div class="course">
                 <a href="programacion20.html"><img src="IMG/carrito/Programacion20.jpg" alt="Curso 3"></a>
                 <h3>MEGAPACK 150 CURSOS DE PROGRAMACIÓN, BASE DE DATOS + IA</h3>
                 <p class="price">S/19,90 - $8</p>
                 <a href="programacion20.html"><span class="badge">Lo más vendido</span></a>
+                <button class="cars-btn" onclick="toggleCurso('MEGAPACK PROGRAMACIÓN', 19.90, 'IMG/carrito/Programacion20.jpg')">Añadir al carrito</button>
             </div>
             <div class="course">
                 <a href="python10.html"><img src="IMG/carrito/Pyrhon10.jpg" alt="Curso 4"></a>
@@ -100,6 +105,8 @@
                 <h3>PYTHON/SQL/POWER BI</h3>
                 <p class="price">S/10 - $4.50</p>
                 <a href="python10.html"><span class="badge">Lo más vendido</span></a>
+                <button class="cars-btn" onclick="toggleCurso('MEGAPACK PYTHON', 10, 'IMG/carrito/Pyrhon10.jpg')">Añadir al carrito</button>
+
             </div>
         </div>
     
@@ -187,14 +194,15 @@
     <section class="section-title">
       <h2>COMPRADOS JUNTOS CON FRECUENCIA</h2>
   </section>
-  <div class="cours-container">
+ <div class="cours-container">
     <div class="cour-card">
       <a href="crm.html"><img src="IMG/carrito/crm.webp" alt="Curso 1"></a>
         <div class="cour-info">
             <h3>CREA SISTEMAS</h3>
             <h3>COMERCIALES CRM & ERP</h3>
-            <p>4,5 ⭐⭐⭐⭐ (54)</p>
+            <p>4,7 ⭐⭐⭐⭐ (54)</p>
             <a href="crm.html"><p class="price">S/30 - $12</p></a>
+            <button class="cars-btn" onclick="toggleCurso('MEGAPACK CREA SISTEMAS', 10, 'IMG/carrito/crm.webp')">Añadir al carrito</button>
         </div>
     </div>
       <div class="cour-card">
@@ -204,6 +212,7 @@
               <h3>DE REDES</h3>
               <p>4,0 ⭐⭐⭐⭐ (354)</p>
               <a href="redes.html"><p class="price">S/24,90 - $10</p></a>
+              <button class="cars-btn" onclick="toggleCurso('MEGAPACK DE REDES', 24.9, 'IMG/carrito/Redes.jpg')">Añadir al carrito</button>
           </div>
       </div>
       <div class="cour-card">
@@ -212,6 +221,7 @@
               <h3>MEGAPACK CREACIÓN DE APPS PARA ANDROID & IOS</h3>
               <p>4,8 ⭐⭐⭐⭐⭐ (1216)</p>
               <a href="apps.html"><p class="price">S/19,90 - $8</p></a>
+              <button class="cars-btn" onclick="toggleCurso('MEGAPACK APPS ANDROID & IOS', 19.9, 'IMG/carrito/apps.webp')">Añadir al carrito</button>
           </div>
         </div>
       <div class="cour-card">
@@ -220,14 +230,16 @@
               <h3>MEGAPACK MICROSOFT POWER PLATFORM</h3>
               <p>4,6 ⭐⭐⭐⭐⭐ (1006)</p>
               <a href="power.html"><p class="price">S/25 - $10</p></a>
+              <button class="cars-btn" onclick="toggleCurso('MEGAPACK POWER PLATFORM', 25.0, 'IMG/carrito/power.webp')">Añadir al carrito</button>
           </div>
         </div>
-      <div class="cour-card">
+        <div class="cour-card">
           <a href="IOT.html"><img src="IMG/carrito/iot20.webp" ></a>
             <div class="cour-info">
                 <h3>MEGAPACK IOT, RASPBERRY & MICROCONTROLADORES</h3>
                 <p>4,8 ⭐⭐⭐⭐⭐ (1736)</p>
                 <a href="IOT.html"><p class="price">S/19.90 - $8</p></a>
+                <button class="cars-btn" onclick="toggleCurso('MEGAPACK IOT, RASPBERRY & MICROCONTROLADORES', 19.9, 'IMG/carrito/iot20.webp')">Añadir al carrito</button>
   
             </div>
         </div>
@@ -237,7 +249,7 @@
               <h3>MACHINE LEARNING, DEEP LEARNING, IA Y BACKEND CON PYTHON</h3>
               <p>4,6 ⭐⭐⭐⭐⭐ (1006)</p>
               <a href="machine.html"><p class="price">S/19.90 - $8</p></a>
-
+              <button class="cars-btn" onclick="toggleCurso('MACHINE LEARNING, IA Y BACKEND', 19.9, 'IMG/carrito/Machine_new.webp')">Añadir al carrito</button>
           </div>
       </div>
       <div class="cour-card">
@@ -246,6 +258,7 @@
               <h3>MEGAPACK 150 CURSOS DE PROGRAMACIÓN, BASE DE DATOS + IA</h3>
               <p>4,5 ⭐⭐⭐⭐ (884)</p>
               <a href="programacion20.html"><p class="price">S/19,90 - $8</p></a>
+              <button class="cars-btn" onclick="toggleCurso('MEGAPACK PROGRAMACIÓN + IA', 19.9, 'IMG/carrito/Programacion20.jpg')">Añadir al carrito</button>
           </div>
       </div>
         <div class="cour-card">
@@ -254,6 +267,7 @@
                   <h3>MEGAPACK PLC & MIKROTIK</h3>
                   <p>4,8 ⭐⭐⭐⭐⭐ (706)</p>
                   <a href="arquitectura.html"><p class="price">S/19,90 - $8</p></a>
+                  <button class="cars-btn" onclick="toggleCurso('MEGAPACK PLC & MIKROTIK', 19.9, 'IMG/carrito/plc.webp')">Añadir al carrito</button>
               </div>
             </div>
 
@@ -264,6 +278,7 @@
               <h3>INGENIERÍA DEL SOFTWARE</h3>
               <p>4,7 ⭐⭐⭐⭐ (94)</p>
               <a href="software.html"><p class="price">S/10 - $4.50</p></a>
+              <button class="cars-btn" onclick="toggleCurso('INTRO INGENIERÍA DEL SOFTWARE', 10, 'IMG/carrito/software.webp')">Añadir al carrito</button>
           </div>
         </div>
       <div class="cour-card">
@@ -272,7 +287,7 @@
             <h3 class="saltorobo">MEGAPACK DE NUBE Y AUTOMATIZACIÓN</h3>
             <p>4,7 ⭐⭐⭐⭐⭐ (1200)</p>
             <a href="automatizacion.html"><p class="price">S/10 - $4.50</p></a>
-
+            <button class="cars-btn" onclick="toggleCurso('MEGAPACK NUBE Y AUTOMATIZACIÓN', 10, 'IMG/carrito/automatizacion.webp')">Añadir al carrito</button>
         </div>
     </div>
        <div class="cour-card">
@@ -282,6 +297,7 @@
             <h3>ENSAMBLAJE Y REPARACIÓN</h3>
             <p>4,5 ⭐⭐⭐⭐ (134)</p>
             <a href="reparacion.html"><p class="price">S/10 - $4.50</p></a>
+            <button class="cars-btn" onclick="toggleCurso('MEGAPACK ENSAMBLAJE Y REPARACIÓN', 10, 'IMG/carrito/reparacion.webp')">Añadir al carrito</button>
         </div>
       </div>
       <div class="cour-card">
@@ -291,6 +307,7 @@
               <h3>ENSAMBLAJE Y REPARACIÓN LAPTOPS</h3>
               <p>4,6 ⭐⭐⭐⭐ (534)</p>
               <a href="laptop.html"><p class="price">S/10 - $4.50</p></a>
+              <button class="cars-btn" onclick="toggleCurso('ENSAMBLAJE Y REPARACIÓN LAPTOPS', 10, 'IMG/carrito/laptops.webp')">Añadir al carrito</button>
           </div>
         </div>
        <div class="cour-card">
@@ -300,6 +317,7 @@
                 <h3>ANÁLISIS Y VISUALIZACIÓN DE DATOS</h3>
                 <p>4,7 ⭐⭐⭐⭐ (734)</p>
                 <a href="visualizacion.html"><p class="price">S/10 - $4.50</p></a>
+                <button class="cars-btn" onclick="toggleCurso('ANÁLISIS Y VISUALIZACIÓN DE DATOS', 10, 'IMG/carrito/visualizacion.webp')">Añadir al carrito</button>
             </div>
           </div>
     <div class="cour-card">
@@ -309,6 +327,7 @@
             <h3>INFANTILES</h3>
             <p>4,7 ⭐⭐⭐⭐ (94)</p>
             <a href="redes.html"><p class="price">S/8 - $3.50</p></a>
+            <button class="cars-btn" onclick="toggleCurso('CREACIÓN DE LIBROS INFANTILES', 8, 'IMG/carrito/Diseña.webp')">Añadir al carrito</button>
         </div>
       </div>
       <div class="cour-card">
@@ -317,7 +336,7 @@
               <h3 class="saltorobo">MEGAPACK ELECTRÓNICA Y ROBOTICA</h3>
               <p>4,7 ⭐⭐⭐⭐⭐ (1200)</p>
               <a href="robotica.html"><p class="price">S/19,90 - $8</p></a>
-
+              <button class="cars-btn" onclick="toggleCurso('MEGAPACK ELECTRÓNICA Y ROBÓTICA', 19.9, 'IMG/carrito/Robotica.jpg')">Añadir al carrito</button>
           </div>
       </div>
       <div class="cour-card">
@@ -326,6 +345,7 @@
               <h3>CREACIÓN DE VIDEOJUEGOS 2D Y 3D</h3>
               <p>4,8 ⭐⭐⭐⭐⭐ (900)</p>
               <a href="videojuego.html"><p class="price">S/19,90 - $8</p></a>
+              <button class="cars-btn" onclick="toggleCurso('CREACIÓN DE VIDEOJUEGOS 2D Y 3D', 19.9, 'IMG/carrito/Videojueos.jpg')">Añadir al carrito</button>
           </div>
       </div>
       <div class="cour-card">
@@ -334,6 +354,7 @@
            <h3 class="saltoespe">MEGAPACK CREACIÓN DE PAGINAS + BASE DE DATOS</h3>
            <p>4,9 ⭐⭐⭐⭐⭐ (850)</p>
            <a href="paginas.html"><p class="price">S/10 - $4.5</p></a>
+           <button class="cars-btn" onclick="toggleCurso('CREACIÓN DE PÁGINAS + BASE DE DATOS', 10, 'IMG/carrito/paginas.webp')">Añadir al carrito</button>
        </div>
      </div>
       <div class="cour-card">
@@ -342,6 +363,7 @@
               <h3 class="saltoespe">MEGAPACK ESPECIALIZADO</h3>
               <p>4,9 ⭐⭐⭐⭐⭐ (450)</p>
               <a href="especializado2.html"><p class="price">S/19,90 - $8</p></a>
+            <button class="cars-btn" onclick="toggleCurso('MEGAPACK ESPECIALIZADO', 19.9, 'IMG/carrito/Especializado2.jpg')">Añadir al carrito</button>
           </div>
         </div>
       <div class="cour-card">
@@ -350,6 +372,7 @@
             <h3>MEGAPACK PROGRAMACIÓN Y ADMINISTRACIÓN</h3>
             <p>4,7 ⭐⭐⭐⭐⭐ (1200)</p>
             <a href="especializado.html"><p class="price">S/19,90 - $8</p></a>
+            <button class="cars-btn" onclick="toggleCurso('PROGRAMACIÓN Y ADMINISTRACIÓN', 19.9, 'IMG/carrito/Especializado.jpg')">Añadir al carrito</button>
           </div>
     </div>
     <div class="cour-card">
@@ -359,6 +382,7 @@
             <H3>DE MARKETING</H3>
             <p>4,8 ⭐⭐⭐⭐⭐ (900)</p>
             <a href="marketing20.html"><p class="price">S/19,90 - $8</p></a>
+            <button class="cars-btn" onclick="toggleCurso('MEGAPACK DE MARKETING', 19.9, 'IMG/carrito/Marketing20.jpg')">Añadir al carrito</button>
         </div>
     </div>
     <div class="cour-card">
@@ -367,6 +391,7 @@
             <h3>MEGAPACK ORATORIA Y LIDERAZGO, PSICOLOGIA E INVERSA</h3>
             <p>4,9 ⭐⭐⭐⭐⭐ (450)</p>
             <a href="psicologia.html"><p class="price">S/12,90 - $5</p></a>
+<button class="cars-btn" onclick="toggleCurso('ORATORIA Y LIDERAZGO, PSICOLOGÍA E INVERSA', 12.9, 'IMG/carrito/Psicologia.jpg')">Añadir al carrito</button>
 
         </div>
       </div>
@@ -377,6 +402,7 @@
                 <h3>POWER BI</h3>
               <p>4,7 ⭐⭐⭐⭐⭐ (1200)</p>
               <a href="python10.html"><p class="price">S/10 - $4.50</p></a>
+<button class="cars-btn" onclick="toggleCurso('PYTHON - SQL - POWER BI', 10, 'IMG/carrito/Pyrhon10.jpg')">Añadir al carrito</button>
 
           </div>
       </div>
@@ -386,6 +412,7 @@
               <h3>MEGAPACK C/C#-JAVA-JAVASCRIPT-ANGULAR</h3>
               <p>4,8 ⭐⭐⭐⭐⭐ (900)</p>
               <a href="java10.html"><p class="price">S/10 - $4.50</p></a>
+              <button class="cars-btn" onclick="toggleCurso('C/C# - JAVA - JAVASCRIPT - ANGULAR', 10, 'IMG/carrito/Java10.jpg')">Añadir al carrito</button>
           </div>
       </div>
       <div class="cour-card">
@@ -394,6 +421,7 @@
               <h3>MEGAPACK GOLAND-POSTGRESQL-HTML-CSS</h3>
               <p>4,9 ⭐⭐⭐⭐⭐ (450)</p>
               <a href="goland.html"><p class="price">S/10 - $4.50</p></a>
+              <button class="cars-btn" onclick="toggleCurso('GOLAND - POSTGRESQL - HTML - CSS', 10, 'IMG/carrito/Goland.jpg')">Añadir al carrito</button>
           </div>
         </div>
         <div class="cour-card">
@@ -403,6 +431,7 @@
                 <h3>+ PACKS DE LIBROS</h3>
               <p>4,7 ⭐⭐⭐⭐⭐ (1200)</p>
               <a href="hacking.html"><p class="price">S/10 - $4.50</p></a>
+              <button class="cars-btn" onclick="toggleCurso('HACKING + PACKS DE LIBROS', 10, 'IMG/carrito/Hacking.jpg')">Añadir al carrito</button>
           </div>
       </div>
       <div class="cour-card">
@@ -412,6 +441,7 @@
             <h3>+ PACKS DE LIBROS</h3>
           <p>4,5 ⭐⭐⭐⭐⭐ (910)</p>
           <a href="ciberseguridad.html"><p class="price">S/10 - $4.50</p></a>
+          <button class="cars-btn" onclick="toggleCurso('CIBERSEGURIDAD + PACKS DE LIBROS', 10, 'IMG/carrito/ciberseguridad.webp')">Añadir al carrito</button>
       </div>
   </div>
       <div class="cour-card">
@@ -420,6 +450,7 @@
               <h3>MEGAPACK AUTOCAD 2D Y 3D + INSTALADOR</h3>
               <p>4,8 ⭐⭐⭐⭐⭐ (900)</p>
               <a href="autocad.html"><p class="price">S/8 - $3.50</p></a>
+              <button class="cars-btn" onclick="toggleCurso('AUTOCAD 2D Y 3D + INSTALADOR', 8, 'IMG/carrito/Autocad.jpg')">Añadir al carrito</button>
           </div>
       </div>
       <div class="cour-card">
@@ -428,6 +459,7 @@
               <h3>DESARROLLO BACKEND CON PYTHON Y DJANGO</h3>
               <p>4,9 ⭐⭐⭐⭐⭐ (450)</p>
               <a href="backend.html"><p class="price">S/10 - $4.50</p></a>
+              <button class="cars-btn" onclick="toggleCurso('BACKEND CON PYTHON Y DJANGO', 10, 'IMG/carrito/Backend.jpg')">Añadir al carrito</button>
           </div>
         </div>
         <div class="cour-card">
@@ -436,6 +468,7 @@
               <h3>MEGAPACK ESTRUCTURA DE DATOS</h3>
               <p>4,7 ⭐⭐⭐⭐⭐ (1200)</p>
               <a href="estructura.html"><p class="price">S/10 - $4.50</p></a>
+              <button class="cars-btn" onclick="toggleCurso('ESTRUCTURA DE DATOS', 10, 'IMG/carrito/Estructura.jpg')">Añadir al carrito</button>
           </div>
       </div>
       <div class="cour-card">
@@ -444,6 +477,7 @@
               <h3>MEGAPACK DATA ANALITYCS Y DATA SCIENCE CON PYTHON</h3>
               <p>4,8 ⭐⭐⭐⭐⭐ (900)</p>
               <a href="data.html"><p class="price">S/14.90 - $7</p></a>
+              <button class="cars-btn" onclick="toggleCurso('DATA ANALYTICS Y DATA SCIENCE CON PYTHON', 14.9, 'IMG/carrito/Data.jpg')">Añadir al carrito</button>
           </div>
       </div>
       <div class="cour-card">
@@ -452,6 +486,7 @@
               <h3 class="saltobase">MEGAPACK DE BASE DE DATOS</h3>
               <p>4,9 ⭐⭐⭐⭐⭐ (450)</p>
               <a href="base.html"><p class="price">S/9.90 - $4.50</p></a>
+              <button class="cars-btn" onclick="toggleCurso('BASE DE DATOS', 9.90, 'IMG/carrito/Base.jpg')">Añadir al carrito</button>
           </div>
         </div>
         <div class="cour-card">
@@ -460,6 +495,7 @@
               <h3>MEGAPACK DE DIBUJO MANGA Y COMIC</h3>
               <p>4,7 ⭐⭐⭐⭐⭐ (345)</p>
               <a href="arte.html"><p class="price">S/7.90 - $3.50</p></a>
+              <button class="cars-btn" onclick="toggleCurso('DIBUJO MANGA Y COMIC', 7.90, 'IMG/carrito/Arte.jpg')">Añadir al carrito</button>
           </div>
       </div>
       <div class="cour-card">
@@ -468,6 +504,7 @@
               <h3>MEGAPACK DE BELLEZA PARA TRABAJO</h3>
               <p>4,8 ⭐⭐⭐⭐⭐ (230)</p>
               <a href="belleza.html"><p class="price">S/24.90 - $10</p></a>
+              <button class="cars-btn" onclick="toggleCurso('BELLEZA PARA TRABAJO', 24.90, 'IMG/carrito/Belleza.jpg')">Añadir al carrito</button>
           </div>
       </div>
       <div class="cour-card">
@@ -476,6 +513,7 @@
               <h3>MEGAPACK DE INGLES</h3>
               <p>4,9 ⭐⭐⭐⭐⭐ (450)</p>
               <a href="ingles.html"><p class="price">S/10 - $4.50</p></a>
+              <button class="cars-btn" onclick="toggleCurso('MEGAPACK DE INGLES', 10, 'IMG/carrito/Ingles.jpg')">Añadir al carrito</button>
           </div>
         </div>
         <div class="cour-card">
@@ -484,6 +522,7 @@
                 <h3>MEGAPACK DE 300 GB</h3>
                 <p>4,8 ⭐⭐⭐⭐⭐ (130)</p>
                 <a href="promo300.html"><p class="price">S/8 - $3.50</p></a>
+                <button class="cars-btn" onclick="toggleCurso('MEGAPACK DE 300 GB', 8, 'IMG/carrito/promo300.webp')">Añadir al carrito</button>
             </div>
         </div>
         <div class="cour-card">
@@ -492,6 +531,7 @@
                 <h3>MEGAPACK PYTHON PARA NIÑOS Y PRINCIPIANTES</h3>
                 <p>4,7 ⭐⭐⭐⭐⭐ (230)</p>
                 <a href="pythonniños.html"><p class="price">S/5 - $2.5</p></a>
+                <button class="cars-btn" onclick="toggleCurso('PYTHON PARA NIÑOS Y PRINCIPIANTES', 5, 'IMG/carrito/pythonniños.jpg')">Añadir al carrito</button>
             </div>
         </div>
         <div class="cour-card">
@@ -500,6 +540,7 @@
                 <h3>MEGAPACK IA PARA REDES SOCIALES</h3>
                 <p>4,6 ⭐⭐⭐⭐⭐ (1006)</p>
                 <a href="ads.html"><p class="price">S/5 - $2.50</p></a>
+                <button class="cars-btn" onclick="toggleCurso('IA PARA REDES SOCIALES', 5, 'IMG/carrito/iaads.webp')">Añadir al carrito</button>
             </div>
           </div>
         <div class="cour-card">
@@ -508,6 +549,8 @@
                 <h3>MEGAPACK ARQUITECTURA</h3>
                 <p>4,6 ⭐⭐⭐⭐⭐ (1006)</p>
                 <a href="arquitectura.html"><p class="price">S/10 - $4.50</p></a>
+                <button class="cars-btn" onclick="toggleCurso('ARQUITECTURA', 10, 'IMG/carrito/arqui.jpg')">Añadir al carrito</button>
+
             </div>
           </div>
           
