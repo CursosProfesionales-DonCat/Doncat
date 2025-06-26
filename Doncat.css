@@ -287,11 +287,6 @@ a {
     height: auto;
 }
 
-
-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
 .prev {
     left: 10px;
     position: absolute;
@@ -325,6 +320,11 @@ button:hover {
   z-index: 10;
   transition: background-color 0.3s ease;
 }
+
+button:hover {
+    background-color: rgba(204, 9, 9, 0.8);
+}
+
 
 .centro {
     font-family: 'arial';
@@ -527,6 +527,10 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Alinea el contenido */
+     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* opcional */
 }
 
 .cour-info h3 {
